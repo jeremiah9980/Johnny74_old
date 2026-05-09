@@ -171,6 +171,39 @@ section{padding:80px 24px;max-width:1100px;margin:0 auto}
 @media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;gap:12px}.gallery .tile-center{grid-column:auto}}
 @media(max-width:480px){.gallery{grid-template-columns:1fr}.gallery .tile-center{grid-column:auto}}
 
+/* ────── highlight reel video grid ────── */
+.reel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px}
+.clip{
+  position:relative;background:#1a0612;border-radius:18px;overflow:hidden;
+  border:2px solid var(--pink-1);box-shadow:var(--shadow-pink);
+  transition:transform .3s ease,box-shadow .3s ease;
+}
+.clip:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(255,45,135,.45)}
+.clip .video-wrap{position:relative;padding-bottom:56.25%;background:#000}
+.clip .video-wrap iframe{
+  position:absolute;inset:0;width:100%;height:100%;border:0;
+}
+.clip .clip-meta{padding:14px 18px 16px;color:#fff;background:linear-gradient(180deg,#2D0A1F 0%,#1a0612 100%)}
+.clip .clip-meta .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+.clip .badge{
+  display:inline-block;padding:4px 12px;border-radius:999px;
+  font-family:"Caprasimo",serif;font-size:13px;letter-spacing:1.2px;
+  background:var(--pink-1);color:#fff;
+  box-shadow:0 2px 10px rgba(255,45,135,.5);
+}
+.clip .badge.gold{background:var(--gold);color:#3d0a25}
+.clip .clip-date{font-family:"DM Sans",sans-serif;font-size:12px;opacity:.75;letter-spacing:.5px}
+.clip .clip-title{font-family:"Caprasimo",serif;font-size:17px;color:#fff;line-height:1.25}
+.clip .clip-sub{font-size:12px;opacity:.7;margin-top:2px;letter-spacing:.3px}
+.reel-note{
+  margin-top:22px;padding:14px 18px;border-radius:14px;
+  background:rgba(255,45,135,.08);border:1px dashed rgba(255,45,135,.4);
+  font-size:13px;color:var(--plum);text-align:center;
+}
+.reel-note a{color:var(--pink-deep);font-weight:600}
+@media(max-width:880px){.reel-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
+@media(max-width:520px){.reel-grid{grid-template-columns:1fr;gap:14px}}
+
 /* ────── pro-poster feature card ────── */
 .poster-feature{
   position:relative;border-radius:24px;overflow:hidden;
@@ -360,7 +393,7 @@ footer .small{font-size:12px;color:var(--plum);opacity:.6;margin-top:8px;letter-
     <a href="#champs">Champs</a>
     <a href="#stats">Stats</a>
     <a href="#instagram">Instagram</a>
-    <a href="#reel">Highlights</a>
+    <a href="#highlights">Highlights</a>
     <a href="recruiting_v2.html">Recruiting</a>
     <a href="story.html">Story</a>
     <a href="player-card.html">Player Card</a>
@@ -608,6 +641,120 @@ footer .small{font-size:12px;color:var(--plum);opacity:.6;margin-top:8px;letter-
     <a href="#">Highlight reel #1</a>
     <a href="#">Speed clip</a>
     <a href="#">Defense</a>
+  </div>
+</section>
+
+<!-- ───────────── HIGHLIGHTS REEL ───────────── -->
+<section id="highlights">
+  <div class="section-head">
+    <div class="kicker">Game Tape</div>
+    <h2>The Highlight Reel</h2>
+  </div>
+  <div class="reel-grid">
+
+    <!-- HOME RUN -->
+    <div class="clip">
+      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1S3xxuE5y708uVW-eu09KcClmUetPy70I/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
+      <div class="clip-meta">
+        <div class="row"><span class="badge gold">HR</span><span class="clip-date">Mar 22, 2025</span></div>
+        <div class="clip-title">Over the fence</div>
+        <div class="clip-sub">Inn 2 (Top) — Home Run</div>
+      </div>
+    </div>
+
+    <!-- TRIPLE 1 -->
+    <div class="clip">
+      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1IrLe9DjE7Dz3WpggFT06xnmopX5YYWeg/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
+      <div class="clip-meta">
+        <div class="row"><span class="badge">3B</span><span class="clip-date">Oct 19, 2025</span></div>
+        <div class="clip-title">Wheels to third</div>
+        <div class="clip-sub">Inn 1 (Top) — Triple</div>
+      </div>
+    </div>
+
+    <!-- TRIPLE 2 -->
+    <div class="clip">
+      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/17pIFo0gocXVJxGH8gxi8uZFmmgsrHGFX/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
+      <div class="clip-meta">
+        <div class="row"><span class="badge">3B</span><span class="clip-date">Mar 8, 2025</span></div>
+        <div class="clip-title">Gap to gap</div>
+        <div class="clip-sub">Inn 2 (Bot) — Triple</div>
+      </div>
+    </div>
+
+    <!-- DOUBLE 1 -->
+    <div class="clip">
+      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1LA2u2egim1j0AV51Hu5r_8z4P7-Au7y7/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
+      <div class="clip-meta">
+        <div class="row"><span class="badge">2B</span><span class="clip-date">Dec 14, 2025</span></div>
+        <div class="clip-title">Stand-up double</div>
+        <div class="clip-sub">Inn 1 (Top) — Double</div>
+      </div>
+    </div>
+
+    <!-- DOUBLE 2 -->
+    <div class="clip">
+      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1Rwb4sYTx1dBhiLxAgxT3tdvwjYoLff3B/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
+      <div class="clip-meta">
+        <div class="row"><span class="badge">2B</span><span class="clip-date">Nov 16, 2025</span></div>
+        <div class="clip-title">In the gap</div>
+        <div class="clip-sub">Inn 1 (Top) — Double</div>
+      </div>
+    </div>
+
+    <!-- DOUBLE 3 -->
+    <div class="clip">
+      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1M6SDjfsHx1DpWt9EKx64xdeL2IO3CIAL/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
+      <div class="clip-meta">
+        <div class="row"><span class="badge">2B</span><span class="clip-date">Aug 23, 2025</span></div>
+        <div class="clip-title">Two bags, easy</div>
+        <div class="clip-sub">Inn 3 (Top) — Double</div>
+      </div>
+    </div>
+
+    <!-- SINGLE 1 -->
+    <div class="clip">
+      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1yX01PQwq9IMnVpzvUGKvivLTrfosJB-x/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
+      <div class="clip-meta">
+        <div class="row"><span class="badge">1B</span><span class="clip-date">Apr 27, 2025</span></div>
+        <div class="clip-title">Beat it out</div>
+        <div class="clip-sub">Inn 1 (Bot) — Single</div>
+      </div>
+    </div>
+
+    <!-- SINGLE 2 -->
+    <div class="clip">
+      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1VhLK3n4vxnilX-m877kReal_Y4dS2H_p/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
+      <div class="clip-meta">
+        <div class="row"><span class="badge">1B</span><span class="clip-date">Apr 13, 2025</span></div>
+        <div class="clip-title">Slap to short</div>
+        <div class="clip-sub">Inn 3 (Top) — Single</div>
+      </div>
+    </div>
+
+    <!-- BUNT 1 -->
+    <div class="clip">
+      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1U2xf1PlyM7cTsSAZu5hHXF1g3SYtHJvh/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
+      <div class="clip-meta">
+        <div class="row"><span class="badge">BUNT</span><span class="clip-date">Nov 16, 2025</span></div>
+        <div class="clip-title">Push it down</div>
+        <div class="clip-sub">Inn 1 (Top) — Sacrifice Bunt</div>
+      </div>
+    </div>
+
+    <!-- BUNT 2 -->
+    <div class="clip">
+      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/12bveOebrcLBdAuT165WK5ht49fXO6ti0/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
+      <div class="clip-meta">
+        <div class="row"><span class="badge">BUNT</span><span class="clip-date">Oct 25, 2025</span></div>
+        <div class="clip-title">Drop it dead</div>
+        <div class="clip-sub">Inn 2 (Bot) — Sacrifice Bunt</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="reel-note">
+    Clips are streamed from Google Drive. For these to play for visitors, the <em>Johnny</em> folder needs to be set to <strong>"Anyone with the link → Viewer"</strong> in Drive sharing settings.
   </div>
 </section>
 
