@@ -16,6 +16,8 @@ johnny74/
 
 ## Stats wired in (from GameChanger, 2026 season)
 
+### Hotshots 2K15 — Primary, 10U
+
 | Category | Value |
 |---|---|
 | Slash line | .623 / .655 / .679 |
@@ -25,10 +27,28 @@ johnny74/
 | Runs / RBI | 30 / 11 |
 | BB / SO / K-L | 5 / 7 / 1 |
 | HBP / SAC / SF | 0 / 1 / 0 |
-| ROE / FC | 0 / 0 |
-| Stolen Bases | 40 (95.24% success) |
+| Stolen Bases | 40 (95.24%) |
 | Caught Stealing / PIK | 2 / 0 |
 | PA / AB | 59 / 53 |
+
+### Bananas — Secondary
+
+| Category | Value |
+|---|---|
+| Slash line | .345 / .537 / .345 |
+| OPS | .881 |
+| GP / PA / AB | 33 / 43 / 29 |
+| Hits | 10 (10 1B, 0 2B, 0 3B, 0 HR) |
+| Runs / RBI | 16 / 7 |
+| BB / SO / K-L | 11 / 13 / 2 |
+| HBP / SAC / SF | 1 / 1 / 0 |
+| Stolen Bases | 17 (89.47%) |
+| Caught Stealing / PIK | 2 / 0 |
+
+### Combined 2026
+
+- 82 AB · 43 H · 46 R · 18 RBI · 16 BB · 1 HR
+- **57 stolen bases at 93%+ success across both teams**
 
 ## What's still placeholder (search and replace)
 

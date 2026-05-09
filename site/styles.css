@@ -305,6 +305,53 @@ a:hover { color: var(--cream); }
 .stat-tables { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
 @media (max-width: 760px) { .stat-tables { grid-template-columns: 1fr; gap: 32px; } }
 
+/* Team block — for showing multiple teams' stats on one page */
+.team-block {
+  margin-bottom: 80px;
+  position: relative;
+}
+.team-block:last-child { margin-bottom: 0; }
+
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--lime);
+  margin-bottom: 36px;
+}
+.team-header .team-id {
+  font-family: var(--display-solid);
+  font-weight: 900;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--cream);
+  letter-spacing: -0.01em;
+}
+.team-header .team-id .pri {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  color: var(--lime);
+  display: block;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.team-header .team-slash {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--lime);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.team-header .team-slash span { color: var(--cream); opacity: .55; font-weight: 400; }
+
 .stat-table { border-top: 2px solid var(--cream); }
 .stat-table h3 {
   font-family: var(--display-solid);
