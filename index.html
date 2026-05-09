@@ -159,6 +159,7 @@ section{padding:80px 24px;max-width:1100px;margin:0 auto}
   transition:transform .5s ease;
 }
 .gallery .tile:hover img{transform:scale(1.04)}
+
 .gallery .caption{
   position:relative;z-index:2;width:100%;padding:14px 16px;
   background:linear-gradient(180deg,transparent 0%,rgba(45,10,31,.7) 100%);
@@ -166,8 +167,9 @@ section{padding:80px 24px;max-width:1100px;margin:0 auto}
 }
 .gallery .caption .t{font-family:"Caprasimo",serif;font-size:18px}
 .gallery .caption .s{font-size:12px;opacity:.85;letter-spacing:.5px}
-@media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;gap:12px}}
-@media(max-width:480px){.gallery{grid-template-columns:1fr}}
+.gallery .tile-center{grid-column:2 / 3}
+@media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;gap:12px}.gallery .tile-center{grid-column:auto}}
+@media(max-width:480px){.gallery{grid-template-columns:1fr}.gallery .tile-center{grid-column:auto}}
 
 /* ────── pro-poster feature card ────── */
 .poster-feature{
@@ -405,6 +407,15 @@ footer .small{font-size:12px;color:var(--plum);opacity:.6;margin-top:8px;letter-
       <div class="pc-sub">Hotshots 2K15 • 2026 Season</div>
     </div>
   </div>
+
+  <div class="poster-feature" style="margin-top:24px">
+    <div class="poster-banner" style="background:var(--gold);color:var(--plum)">Studio • The Lookbook</div>
+    <img src="photos/studio-composite.jpeg" alt="Johnny Rogers — Brick by Brick Spring 2026 photo collection: solo portraits with flag, batting stance, and team composite">
+    <div class="poster-caption">
+      <div class="pc-title">The Lookbook</div>
+      <div class="pc-sub">Solo Portraits • Batting Stance • Team Shot</div>
+    </div>
+  </div>
 </section>
 
 <!-- ───────────── PHOTOS ───────────── -->
@@ -437,6 +448,10 @@ footer .small{font-size:12px;color:var(--plum);opacity:.6;margin-top:8px;letter-
     <div class="tile">
       <img src="photos/at-bat.jpeg" alt="Johnny Rogers — Hotshots #74 at the plate, batting helmet, gripping the bat" loading="lazy">
       <div class="caption"><div class="t">At the Plate</div><div class="s">Locked in, ready to slap</div></div>
+    </div>
+    <div class="tile tile-center">
+      <img src="photos/coach-day.jpeg" alt="Johnny Rogers — day-game dugout selfie with her coach, batting helmet on, peace sign" loading="lazy">
+      <div class="caption"><div class="t">Sun's Out</div><div class="s">Day-game dugout, locked in with Coach</div></div>
     </div>
   </div>
 </section>
