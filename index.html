@@ -4,794 +4,223 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>#74 Johnny Rogers — Athlete Profile</title>
-<meta name="description" content="#74 Johnny Rogers — Athlete Profile. Stats, story, highlights." />
+<meta name="description" content="#74 Johnny Rogers — Athlete Profile. .623 average, 1.334 OPS, 40 stolen bases. The full season line." />
 <meta property="og:title" content="#74 Johnny Rogers — Athlete Profile" />
-<meta property="og:description" content="Stats. Speed. Sparkle. The full athlete profile." />
+<meta property="og:description" content="A .623 hitter with 40 stolen bases at 95.24%. The full athlete profile." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://jeremiah9980.github.io/johnny74/index.html" />
-<meta name="twitter:card" content="summary" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:opsz,wght@9..40,300..800&display=swap" rel="stylesheet">
-
-<style>
-:root{
-  --pink-1:#FF2D87;       /* hot pink — primary */
-  --pink-2:#FF5FA8;       /* mid pink */
-  --pink-3:#FFB6D0;       /* soft */
-  --pink-4:#FFE4EE;       /* pastel surface */
-  --cream:#FFF8FB;        /* off-white background */
-  --magenta:#C2185B;      /* deep accent */
-  --plum:#2D0A1F;         /* near-black ink */
-  --gold:#F4C064;         /* warm accent for sparkle */
-  --shadow-pink:0 18px 50px -18px rgba(255,45,135,.45);
-  --shadow-soft:0 8px 30px -10px rgba(194,24,91,.18);
-  --grad-hero:radial-gradient(circle at 20% 10%,#FFD1E4 0%,transparent 55%),
-              radial-gradient(circle at 85% 30%,#FFB6D0 0%,transparent 50%),
-              radial-gradient(circle at 50% 90%,#FFE4EE 0%,transparent 60%),
-              linear-gradient(135deg,#FF5FA8 0%,#FF2D87 60%,#C2185B 100%);
-  --grad-card:linear-gradient(160deg,#FFFFFF 0%,#FFF0F6 100%);
-}
-
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:"DM Sans",system-ui,sans-serif;
-  background:var(--cream);
-  color:var(--plum);
-  line-height:1.55;
-  -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
-}
-body::before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
-  background-image:
-    radial-gradient(circle at 10% 20%,rgba(255,182,208,.35) 0%,transparent 40%),
-    radial-gradient(circle at 90% 80%,rgba(255,95,168,.18) 0%,transparent 50%);
-}
-img{max-width:100%;display:block;border-radius:12px}
-a{color:var(--magenta);text-decoration:none;transition:color .2s}
-a:hover{color:var(--pink-1)}
-
-/* ────── nav ────── */
-.topbar{
-  position:sticky;top:0;z-index:50;
-  background:rgba(255,248,251,.85);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(255,45,135,.12);
-  padding:14px 24px;
-  display:flex;justify-content:space-between;align-items:center;
-  gap:16px;flex-wrap:wrap;
-}
-.brand{
-  font-family:"Caprasimo",serif;font-size:20px;color:var(--pink-1);
-  letter-spacing:.5px;
-}
-.brand::before{content:"♡ ";font-size:14px;color:var(--pink-2)}
-.nav{display:flex;gap:18px;flex-wrap:wrap}
-.nav a{font-weight:500;font-size:14px;color:var(--plum)}
-.nav a:hover{color:var(--pink-1)}
-
-/* ────── hero ────── */
-.hero{
-  position:relative;
-  background:var(--grad-hero);
-  color:#fff;
-  padding:80px 24px 100px;
-  text-align:center;
-  overflow:hidden;
-}
-.hero::after{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='4'><circle cx='1' cy='1' r='.6' fill='white' opacity='.18'/></svg>");
-  opacity:.4;mix-blend-mode:overlay;
-}
-.hero-inner{position:relative;z-index:2;max-width:920px;margin:0 auto}
-.eyebrow{
-  font-family:"Fraunces",serif;font-style:italic;font-weight:300;
-  letter-spacing:2px;text-transform:uppercase;font-size:13px;
-  opacity:.95;margin-bottom:18px;
-}
-.jersey{
-  font-family:"Caprasimo",serif;
-  font-size:clamp(120px,22vw,220px);line-height:.85;
-  background:linear-gradient(180deg,#fff 0%,#FFE4EE 70%,#FFB6D0 100%);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-  text-shadow:0 8px 40px rgba(255,255,255,.3);
-  margin-bottom:6px;
-  filter:drop-shadow(0 12px 24px rgba(194,24,91,.35));
-  animation:pop 1.2s cubic-bezier(.16,1,.3,1) both;
-}
-@keyframes pop{from{opacity:0;transform:scale(.7) rotate(-6deg)}to{opacity:1;transform:none}}
-.team-line{font-size:14px;letter-spacing:1.5px;text-transform:uppercase;opacity:.95;margin-bottom:10px}
-.player-name{
-  font-family:"Caprasimo",serif;font-size:clamp(36px,6vw,60px);
-  margin:8px 0 6px;letter-spacing:-.5px;
-}
-.tagline{
-  font-family:"Fraunces",serif;font-style:italic;font-weight:400;
-  font-size:clamp(18px,2.4vw,24px);opacity:.95;margin-bottom:18px;
-}
-.bio-blurb{max-width:620px;margin:0 auto;opacity:.95;font-size:15px}
-
-/* ────── hero stat strip ────── */
-.stat-strip{
-  max-width:1100px;margin:-50px auto 0;padding:0 24px;position:relative;z-index:5;
-  display:grid;grid-template-columns:repeat(6,1fr);gap:12px;
-}
-.stat-strip .stat{
-  background:var(--grad-card);border:1px solid rgba(255,45,135,.15);
-  border-radius:16px;padding:18px 12px;text-align:center;
-  box-shadow:var(--shadow-soft);
-  transition:transform .25s,box-shadow .25s;
-}
-.stat-strip .stat:hover{transform:translateY(-4px);box-shadow:var(--shadow-pink)}
-.stat .v{font-family:"Caprasimo",serif;font-size:clamp(22px,3.2vw,32px);color:var(--pink-1);line-height:1}
-.stat .l{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--plum);opacity:.65;margin-top:8px}
-@media(max-width:780px){.stat-strip{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:440px){.stat-strip{grid-template-columns:repeat(2,1fr)}}
-
-/* ────── sections ────── */
-section{padding:80px 24px;max-width:1100px;margin:0 auto}
-.section-head{margin-bottom:40px;text-align:center}
-.section-head .kicker{
-  display:inline-block;font-family:"Fraunces",serif;font-style:italic;
-  font-size:14px;color:var(--pink-1);letter-spacing:2px;text-transform:uppercase;
-  background:var(--pink-4);padding:6px 16px;border-radius:999px;margin-bottom:14px;
-}
-.section-head h2{font-family:"Caprasimo",serif;font-size:clamp(32px,4.5vw,48px);color:var(--plum)}
-.section-head h2::after{content:" ♡";color:var(--pink-2)}
-
-/* ────── photo gallery ────── */
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.gallery .tile{
-  position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4;
-  background:linear-gradient(135deg,var(--pink-3),var(--pink-1));
-  box-shadow:var(--shadow-soft);
-  display:flex;align-items:flex-end;
-  transition:transform .3s,box-shadow .3s;
-}
-.gallery .tile:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:var(--shadow-pink)}
-.gallery .tile img{
-  position:absolute;inset:0;width:100%;height:100%;
-  object-fit:cover;border-radius:0;
-  transition:transform .5s ease;
-}
-.gallery .tile:hover img{transform:scale(1.04)}
-
-.gallery .caption{
-  position:relative;z-index:2;width:100%;padding:14px 16px;
-  background:linear-gradient(180deg,transparent 0%,rgba(45,10,31,.7) 100%);
-  color:#fff;
-}
-.gallery .caption .t{font-family:"Caprasimo",serif;font-size:18px}
-.gallery .caption .s{font-size:12px;opacity:.85;letter-spacing:.5px}
-.gallery .tile-center{grid-column:2 / 3}
-@media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;gap:12px}.gallery .tile-center{grid-column:auto}}
-@media(max-width:480px){.gallery{grid-template-columns:1fr}.gallery .tile-center{grid-column:auto}}
-
-/* ────── highlight reel video grid ────── */
-.reel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px}
-.clip{
-  position:relative;background:#1a0612;border-radius:18px;overflow:hidden;
-  border:2px solid var(--pink-1);box-shadow:var(--shadow-pink);
-  transition:transform .3s ease,box-shadow .3s ease;
-}
-.clip:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(255,45,135,.45)}
-.clip .video-wrap{position:relative;padding-bottom:56.25%;background:#000}
-.clip .video-wrap iframe{
-  position:absolute;inset:0;width:100%;height:100%;border:0;
-}
-.clip .clip-meta{padding:14px 18px 16px;color:#fff;background:linear-gradient(180deg,#2D0A1F 0%,#1a0612 100%)}
-.clip .clip-meta .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
-.clip .badge{
-  display:inline-block;padding:4px 12px;border-radius:999px;
-  font-family:"Caprasimo",serif;font-size:13px;letter-spacing:1.2px;
-  background:var(--pink-1);color:#fff;
-  box-shadow:0 2px 10px rgba(255,45,135,.5);
-}
-.clip .badge.gold{background:var(--gold);color:#3d0a25}
-.clip .clip-date{font-family:"DM Sans",sans-serif;font-size:12px;opacity:.75;letter-spacing:.5px}
-.clip .clip-title{font-family:"Caprasimo",serif;font-size:17px;color:#fff;line-height:1.25}
-.clip .clip-sub{font-size:12px;opacity:.7;margin-top:2px;letter-spacing:.3px}
-.reel-note{
-  margin-top:22px;padding:14px 18px;border-radius:14px;
-  background:rgba(255,45,135,.08);border:1px dashed rgba(255,45,135,.4);
-  font-size:13px;color:var(--plum);text-align:center;
-}
-.reel-note a{color:var(--pink-deep);font-weight:600}
-@media(max-width:880px){.reel-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
-@media(max-width:520px){.reel-grid{grid-template-columns:1fr;gap:14px}}
-
-/* ────── pro-poster feature card ────── */
-.poster-feature{
-  position:relative;border-radius:24px;overflow:hidden;
-  background:linear-gradient(160deg,#1a0612 0%,#3d0a25 50%,#5a0e36 100%);
-  box-shadow:var(--shadow-pink);
-  margin-top:36px;
-  border:3px solid var(--pink-1);
-}
-.poster-feature .poster-banner{
-  position:absolute;top:18px;left:18px;z-index:3;
-  background:var(--pink-1);color:#fff;
-  font-family:"Caprasimo",serif;font-size:14px;
-  padding:8px 16px;border-radius:999px;
-  letter-spacing:1px;text-transform:uppercase;
-  box-shadow:0 4px 16px rgba(255,45,135,.5);
-}
-.poster-feature img{
-  width:100%;height:auto;display:block;
-  border-radius:0;
-}
-.poster-feature .poster-caption{
-  padding:20px 28px;color:#fff;text-align:center;
-  background:linear-gradient(180deg,transparent,rgba(0,0,0,.4));
-}
-.poster-feature .poster-caption .pc-title{
-  font-family:"Caprasimo",serif;font-size:24px;color:#fff;margin-bottom:4px;
-}
-.poster-feature .poster-caption .pc-sub{
-  font-family:"Fraunces",serif;font-style:italic;font-size:14px;
-  letter-spacing:1.5px;opacity:.85;
-}
-
-/* ────── championship moments ────── */
-.champs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.champs-grid .champ-tile{
-  position:relative;border-radius:18px;overflow:hidden;
-  background:linear-gradient(135deg,#FFE4EE,var(--pink-3));
-  box-shadow:var(--shadow-soft);
-  aspect-ratio:4/5;
-  transition:transform .3s,box-shadow .3s;
-  border:1px solid rgba(255,45,135,.15);
-}
-.champs-grid .champ-tile:hover{transform:translateY(-5px);box-shadow:var(--shadow-pink)}
-.champs-grid .champ-tile img{
-  position:absolute;inset:0;width:100%;height:100%;
-  object-fit:cover;border-radius:0;
-  transition:transform .5s ease;
-}
-.champs-grid .champ-tile:hover img{transform:scale(1.04)}
-.champs-grid .champ-tile .ribbon{
-  position:absolute;top:14px;right:14px;z-index:2;
-  background:linear-gradient(180deg,var(--gold),#D89A30);
-  color:var(--plum);font-family:"Caprasimo",serif;font-size:11px;
-  padding:5px 12px;border-radius:999px;letter-spacing:1px;
-  box-shadow:0 4px 12px rgba(0,0,0,.25);
-}
-.champs-grid .champ-tile .champ-cap{
-  position:absolute;left:0;right:0;bottom:0;z-index:2;
-  padding:16px 18px;color:#fff;
-  background:linear-gradient(180deg,transparent 0%,rgba(45,10,31,.85) 100%);
-}
-.champs-grid .champ-tile .champ-cap .ct{font-family:"Caprasimo",serif;font-size:18px}
-.champs-grid .champ-tile .champ-cap .cs{font-size:12px;opacity:.9;letter-spacing:.5px;margin-top:2px}
-@media(max-width:640px){.champs-grid{grid-template-columns:1fr}}
-
-/* ────── profile narrative ────── */
-.profile{
-  background:var(--grad-card);border-radius:24px;padding:48px;
-  box-shadow:var(--shadow-soft);
-  border:1px solid rgba(255,45,135,.1);
-}
-.profile p{font-size:17px;margin-bottom:18px;color:var(--plum)}
-.profile p strong{color:var(--pink-1);font-weight:600}
-.profile .stat-row{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px;
-}
-.profile .stat-row .stat{
-  background:var(--pink-4);border-radius:14px;padding:18px 14px;text-align:center;
-}
-@media(max-width:720px){.profile{padding:28px}.profile .stat-row{grid-template-columns:repeat(2,1fr)}}
-
-/* ────── timeline ────── */
-.timeline{position:relative}
-.timeline::before{
-  content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;
-  background:linear-gradient(180deg,var(--pink-3),var(--pink-1),var(--magenta));
-  transform:translateX(-50%);border-radius:3px;
-}
-.tl-row{
-  display:grid;grid-template-columns:1fr 60px 1fr;gap:20px;
-  margin-bottom:36px;align-items:flex-start;
-}
-.tl-row .tl-card{
-  background:var(--grad-card);border-radius:18px;padding:24px;
-  box-shadow:var(--shadow-soft);border:1px solid rgba(255,45,135,.1);
-}
-.tl-row .tl-card h3{font-family:"Caprasimo",serif;font-size:22px;color:var(--pink-1);margin-bottom:10px}
-.tl-row .tl-card p{font-size:14.5px;color:var(--plum)}
-.tl-dot{
-  width:24px;height:24px;border-radius:50%;justify-self:center;margin-top:24px;
-  background:var(--pink-1);border:4px solid #fff;box-shadow:0 0 0 3px var(--pink-3),0 0 20px var(--pink-2);
-}
-.tl-row.right .tl-card{grid-column:3}
-.tl-row.right .tl-dot{grid-column:2}
-.tl-row.left .tl-card{grid-column:1}
-.tl-row.left .tl-dot{grid-column:2}
-@media(max-width:720px){
-  .timeline::before{left:14px}
-  .tl-row{grid-template-columns:36px 1fr;gap:14px}
-  .tl-row .tl-dot{grid-column:1;justify-self:start;margin-left:2px}
-  .tl-row .tl-card{grid-column:2}
-  .tl-row.right .tl-card,.tl-row.left .tl-card{grid-column:2}
-  .tl-row.right .tl-dot,.tl-row.left .tl-dot{grid-column:1}
-}
-
-/* ────── stats dashboard ────── */
-.dash{display:grid;gap:32px}
-.table-wrap{
-  background:var(--grad-card);border-radius:20px;padding:28px;overflow:auto;
-  box-shadow:var(--shadow-soft);border:1px solid rgba(255,45,135,.1);
-}
-.table-wrap h3{font-family:"Caprasimo",serif;font-size:22px;color:var(--pink-1);margin-bottom:18px}
-table{width:100%;border-collapse:collapse;font-size:14px;min-width:560px}
-thead th{
-  background:linear-gradient(180deg,var(--pink-1),var(--magenta));color:#fff;
-  padding:12px 10px;text-align:left;font-weight:600;letter-spacing:.5px;
-}
-thead th:first-child{border-radius:10px 0 0 10px}
-thead th:last-child{border-radius:0 10px 10px 0}
-tbody td{padding:12px 10px;border-bottom:1px solid var(--pink-4)}
-tbody tr:hover{background:var(--pink-4)}
-
-.adv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.adv-grid .stat{
-  background:var(--grad-card);border-radius:16px;padding:22px 14px;text-align:center;
-  box-shadow:var(--shadow-soft);border:1px solid rgba(255,45,135,.12);
-}
-.adv-grid .stat .v{font-family:"Caprasimo",serif;font-size:30px;color:var(--pink-1);line-height:1}
-.adv-grid .stat .l{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--plum);opacity:.65;margin-top:8px}
-@media(max-width:720px){.adv-grid{grid-template-columns:repeat(2,1fr)}}
-
-/* ────── instagram ────── */
-.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.ig-grid a{
-  background:var(--grad-card);border-radius:14px;padding:20px;
-  display:flex;align-items:center;gap:12px;font-weight:500;color:var(--plum);
-  border:1px solid rgba(255,45,135,.12);box-shadow:var(--shadow-soft);
-  transition:transform .25s,box-shadow .25s;
-}
-.ig-grid a:hover{transform:translateY(-3px);box-shadow:var(--shadow-pink);color:var(--pink-1)}
-.ig-grid a::before{content:"♡";color:var(--pink-1);font-size:24px}
-@media(max-width:720px){.ig-grid{grid-template-columns:1fr}}
-
-/* ────── highlight script ────── */
-.script{
-  background:linear-gradient(160deg,var(--magenta) 0%,var(--pink-1) 100%);
-  color:#fff;border-radius:24px;padding:48px;
-  box-shadow:var(--shadow-pink);
-}
-.script .beat{margin-bottom:24px}
-.script .beat .label{
-  font-family:"Fraunces",serif;font-style:italic;font-size:13px;
-  text-transform:uppercase;letter-spacing:2px;opacity:.85;margin-bottom:6px;
-}
-.script .beat .line{
-  font-family:"Fraunces",serif;font-size:19px;line-height:1.5;font-weight:400;
-}
-@media(max-width:720px){.script{padding:32px 24px}.script .beat .line{font-size:17px}}
-
-/* ────── footer ────── */
-footer{
-  background:linear-gradient(180deg,var(--cream) 0%,var(--pink-4) 100%);
-  padding:40px 24px;text-align:center;
-  border-top:1px solid rgba(255,45,135,.12);margin-top:60px;
-}
-footer .brand-foot{font-family:"Caprasimo",serif;font-size:22px;color:var(--pink-1)}
-footer .small{font-size:12px;color:var(--plum);opacity:.6;margin-top:8px;letter-spacing:.5px}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;700;900&family=Big+Shoulders+Display:wght@400;700;900&family=JetBrains+Mono:wght@300;400;700&family=Fraunces:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="topbar">
-  <div class="brand">Johnny74 • Athlete Profile</div>
-  <nav class="nav">
-    <a href="#about">About</a>
-    <a href="#timeline">Timeline</a>
-    <a href="#champs">Champs</a>
-    <a href="#stats">Stats</a>
-    <a href="#instagram">Instagram</a>
-    <a href="#highlights">Highlights</a>
-    <a href="recruiting_v2.html">Recruiting</a>
-    <a href="story.html">Story</a>
-    <a href="player-card.html">Player Card</a>
-  </nav>
-</header>
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="mark"><span class="dot"></span><a href="index.html">JOHNNY ROGERS · #74</a></div>
+    <nav>
+      <a href="index.html" class="active">Stats</a>
+      <a href="story.html">Story</a>
+      <a href="recruiting.html">Recruiting</a>
+    </nav>
+  </header>
 
-<!-- ───────────── HERO ───────────── -->
-<section class="hero" style="max-width:none;padding-bottom:140px">
-  <div class="hero-inner">
-    <div class="eyebrow">Bright. Bold. Built different.</div>
-    <div class="jersey">74</div>
-    <div class="team-line">[TEAM_NAME] • [ORG] • [CITY], [STATE]</div>
-    <h1 class="player-name">#74 Johnny Rogers</h1>
-    <div class="tagline">Impact Player</div>
-    <p class="bio-blurb">
-      [TODO: 2–3 sentence elevator on Johnny — playing style, energy, identity.
-      Pull the same vibe as kass21's "versatile, gritty, game-changing" line but
-      true to Johnny.]
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-meta">
+      <span class="bar"></span>
+      <span>SEASON 2026 · 10U · HOTSHOTS 2K15 + BANANAS · GEORGETOWN, TX</span>
+    </div>
+
+    <div class="hero-stack">
+      <h1 class="hero-name">
+        Johnny<br/><span class="last"><em>Rogers</em></span>
+      </h1>
+      <div class="hero-jersey">74</div>
+    </div>
+
+    <p class="hero-tagline">
+      Lefty-hitting shortstop with elite speed. <strong style="color:var(--lime);font-style:normal;">.623</strong> at the plate, 40 stolen bases at a 95% clip, and the kind of contact rate that turns walks, errors, and infield singles into runs.
     </p>
-  </div>
-</section>
 
-<!-- hero stat strip — populated from scraper -->
-<div class="stat-strip">
-  <div class="stat"><div class="v">#74</div><div class="l">Jersey</div></div>
-  <div class="stat"><div class="v">.XXX</div><div class="l">Career AVG</div></div>
-  <div class="stat"><div class="v">X.XXX</div><div class="l">Career OPS</div></div>
-  <div class="stat"><div class="v">XX</div><div class="l">Career Hits</div></div>
-  <div class="stat"><div class="v">XX</div><div class="l">Career SB</div></div>
-  <div class="stat"><div class="v">XX%</div><div class="l">SB Success</div></div>
-</div>
-
-<!-- ───────────── PRO POSTER FEATURE ───────────── -->
-<section style="padding-top:56px">
-  <div class="section-head">
-    <div class="kicker">Spring 2026</div>
-    <h2>Brick by Brick</h2>
-  </div>
-  <div class="poster-feature">
-    <div class="poster-banner">Hotshots 2K15 • 10U • 2026</div>
-    <img src="photos/pro-poster.jpeg" alt="Johnny Rogers — official Hotshots 2K15 player poster, #74 batting stance under stadium lights">
-    <div class="poster-caption">
-      <div class="pc-title">#74 Johnny Rogers</div>
-      <div class="pc-sub">Hotshots 2K15 • 2026 Season</div>
-    </div>
-  </div>
-
-  <div class="poster-feature" style="margin-top:24px">
-    <div class="poster-banner" style="background:var(--gold);color:var(--plum)">Studio • The Lookbook</div>
-    <img src="photos/studio-composite.jpeg" alt="Johnny Rogers — Brick by Brick Spring 2026 photo collection: solo portraits with flag, batting stance, and team composite">
-    <div class="poster-caption">
-      <div class="pc-title">The Lookbook</div>
-      <div class="pc-sub">Solo Portraits • Batting Stance • Team Shot</div>
-    </div>
-  </div>
-</section>
-
-<!-- ───────────── PHOTOS ───────────── -->
-<section id="about">
-  <div class="section-head">
-    <div class="kicker">Featured</div>
-    <h2>Johnny in Action</h2>
-  </div>
-  <div class="gallery">
-    <div class="tile">
-      <img src="photos/golden-hour.jpeg" alt="Johnny Rogers — sunset Hotshots selfie with eye black, ballpark in background" loading="lazy">
-      <div class="caption"><div class="t">Golden Hour</div><div class="s">Sunset Hotshots, eye black on</div></div>
-    </div>
-    <div class="tile">
-      <img src="photos/sweet-side.jpeg" alt="Johnny Rogers — gingerbread house decorating with her bestie" loading="lazy">
-      <div class="caption"><div class="t">Sweet Side</div><div class="s">Off the field, all heart</div></div>
-    </div>
-    <div class="tile">
-      <img src="photos/game-face.jpeg" alt="Johnny Rogers — Hotshots jersey, red eye black war paint at the dugout fence" loading="lazy">
-      <div class="caption"><div class="t">Game Face</div><div class="s">War paint, ready to roll</div></div>
-    </div>
-    <div class="tile">
-      <img src="photos/best-friends.jpeg" alt="Johnny Rogers — Taco Bell run with her bestie, peace signs and Bananas jerseys" loading="lazy">
-      <div class="caption"><div class="t">BFFs</div><div class="s">Johnny + Kass forever</div></div>
-    </div>
-    <div class="tile">
-      <img src="photos/bananas-flex.jpeg" alt="Johnny Rogers — #74 Bananas uniform, biceps flexed" loading="lazy">
-      <div class="caption"><div class="t">Bananas Era</div><div class="s">#74 — strong as ever</div></div>
-    </div>
-    <div class="tile">
-      <img src="photos/at-bat.jpeg" alt="Johnny Rogers — Hotshots #74 at the plate, batting helmet, gripping the bat" loading="lazy">
-      <div class="caption"><div class="t">At the Plate</div><div class="s">Locked in, ready to slap</div></div>
-    </div>
-    <div class="tile">
-      <img src="photos/coach-day.jpeg" alt="Johnny Rogers — day-game dugout selfie with her coach, batting helmet on, peace sign" loading="lazy">
-      <div class="caption"><div class="t">Sun's Out</div><div class="s">Day-game dugout, locked in with Coach</div></div>
-    </div>
-    <div class="tile">
-      <img src="photos/off-duty.jpeg" alt="Johnny Rogers — dressed up off the field" loading="lazy">
-      <div class="caption"><div class="t">Off-Duty</div><div class="s">When the cleats come off</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ───────────── PROFILE ───────────── -->
-<section>
-  <div class="section-head">
-    <div class="kicker">Player Profile</div>
-    <h2>Who She Is</h2>
-  </div>
-  <div class="profile">
-    <p>
-      [TODO: Opening paragraph. Set up Johnny's identity — what stands out about
-      her game, what she brings every time she steps on the field. Mirror the
-      structure of the kass21 profile paragraph.]
-    </p>
-    <p>
-      Across her career, Johnny owns a <strong>.XXX career batting average</strong>,
-      <strong>.XXX OBP</strong>, <strong>X.XXX OPS</strong>, <strong>XX career hits</strong>,
-      and <strong>XX stolen bases</strong> with a <strong>XX% stolen-base success rate</strong>.
-      <em>(Auto-fill from scraper output: stats.json → career.)</em>
-    </p>
-    <div class="stat-row">
-      <div class="stat"><div class="v" style="font-family:Caprasimo,serif;font-size:28px;color:var(--pink-1)">.XXX</div><div class="l" style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;opacity:.65;margin-top:6px">Career AVG</div></div>
-      <div class="stat"><div class="v" style="font-family:Caprasimo,serif;font-size:28px;color:var(--pink-1)">.XXX</div><div class="l" style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;opacity:.65;margin-top:6px">Career OBP</div></div>
-      <div class="stat"><div class="v" style="font-family:Caprasimo,serif;font-size:28px;color:var(--pink-1)">.XXX</div><div class="l" style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;opacity:.65;margin-top:6px">Career SLG</div></div>
-      <div class="stat"><div class="v" style="font-family:Caprasimo,serif;font-size:28px;color:var(--pink-1)">X.XXX</div><div class="l" style="font-size:11px;letter-spacing:1.2px;text-transform:uppercase;opacity:.65;margin-top:6px">Career OPS</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ───────────── TIMELINE ───────────── -->
-<section id="timeline">
-  <div class="section-head">
-    <div class="kicker">Journey</div>
-    <h2>Development Timeline</h2>
-  </div>
-  <div class="timeline">
-    <div class="tl-row left">
-      <div class="tl-card">
-        <h3>[YEAR] • Foundation</h3>
-        <p>[TODO: where Johnny started — first leagues, early coaches, what got established.]</p>
-      </div>
-      <div class="tl-dot"></div>
-    </div>
-    <div class="tl-row right">
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <h3>[YEAR] • Growth</h3>
-        <p>[TODO: development phase — new teams, new positions, what skill jumps happened.]</p>
+    <div class="slash">
+      <span class="slash-num">.623</span>
+      <span class="slash-sep">/</span>
+      <span class="slash-num">.655</span>
+      <span class="slash-sep">/</span>
+      <span class="slash-num accent">.679</span>
+      <div class="slash-meta">
+        AVG / OBP / SLG<br/>
+        <strong>1.334 OPS</strong> · 33 H / 53 AB
       </div>
     </div>
-    <div class="tl-row left">
-      <div class="tl-card">
-        <h3>[YEAR] • Breakout</h3>
-        <p>[TODO: peak season callout — the moment her game took a clear leap. Pull stats from scraper output.]</p>
+  </section>
+
+  <!-- HEADLINE STATS -->
+  <section class="stat-strip">
+    <div class="stat-grid">
+      <div class="stat-card feature">
+        <div class="stat-label">COMBINED HITS</div>
+        <div class="stat-num">43</div>
+        <div class="stat-sub">across two teams</div>
       </div>
-      <div class="tl-dot"></div>
-    </div>
-    <div class="tl-row right">
-      <div class="tl-dot"></div>
-      <div class="tl-card">
-        <h3>[CURRENT SEASON] • Now</h3>
-        <p>[TODO: current season status — team record, key numbers, what's trending up.]</p>
+      <div class="stat-card">
+        <div class="stat-label">COMBINED RUNS</div>
+        <div class="stat-num">46</div>
+        <div class="stat-sub">scored in 2026</div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ───────────── CHAMPIONSHIP MOMENTS ───────────── -->
-<section id="champs">
-  <div class="section-head">
-    <div class="kicker">Hardware</div>
-    <h2>Championship Moments</h2>
-  </div>
-  <div class="champs-grid">
-    <div class="champ-tile">
-      <img src="photos/champ-coin.jpeg" alt="Johnny Rogers — holding NCS championship coin with two coaches at the field" loading="lazy">
-      <div class="ribbon">NCS</div>
-      <div class="champ-cap"><div class="ct">Coin Day</div><div class="cs">Earned with the staff</div></div>
-    </div>
-    <div class="champ-tile">
-      <img src="photos/champ-coach.jpeg" alt="Johnny Rogers — championship celebration with her coach, holding NCS coin" loading="lazy">
-      <div class="ribbon">CHAMPS</div>
-      <div class="champ-cap"><div class="ct">#1</div><div class="cs">Pointing at the ceiling</div></div>
-    </div>
-    <div class="champ-tile">
-      <img src="photos/champ-night.jpeg" alt="Johnny Rogers — night-game championship ring celebration with coach" loading="lazy">
-      <div class="ribbon">RING</div>
-      <div class="champ-cap"><div class="ct">Lights On</div><div class="cs">Night-game victory</div></div>
-    </div>
-    <div class="champ-tile">
-      <img src="photos/champ-family.jpeg" alt="Johnny Rogers — championship celebration with family, holding ring" loading="lazy">
-      <div class="ribbon">SQUAD</div>
-      <div class="champ-cap"><div class="ct">All Hers</div><div class="cs">Family on the field</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ───────────── STATS DASHBOARD ───────────── -->
-<section id="stats">
-  <div class="section-head">
-    <div class="kicker">Numbers</div>
-    <h2>Stat Dashboard</h2>
-  </div>
-
-  <div class="dash">
-    <div class="table-wrap">
-      <h3>Season-by-Season</h3>
-      <table>
-        <thead>
-          <tr><th>Season</th><th>AVG</th><th>OBP</th><th>SLG</th><th>OPS</th><th>H</th><th>HR</th><th>3B</th><th>SB</th></tr>
-        </thead>
-        <tbody>
-          <!-- Replace with rows from scraper output (stats.json → seasons[]) -->
-          <tr><td>[Season 1]</td><td>.XXX</td><td>.XXX</td><td>.XXX</td><td>X.XXX</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-          <tr><td>[Season 2]</td><td>.XXX</td><td>.XXX</td><td>.XXX</td><td>X.XXX</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-          <tr><td>[Season 3]</td><td>.XXX</td><td>.XXX</td><td>.XXX</td><td>X.XXX</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-          <tr><td>[Current]</td><td>.XXX</td><td>.XXX</td><td>.XXX</td><td>X.XXX</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div>
-      <h3 style="font-family:Caprasimo,serif;font-size:22px;color:var(--pink-1);margin-bottom:18px;text-align:center">Current Season Snapshot</h3>
-      <div class="adv-grid">
-        <div class="stat"><div class="v">XX.XX</div><div class="l">Contact %</div></div>
-        <div class="stat"><div class="v">X.XXX</div><div class="l">BB / K</div></div>
-        <div class="stat"><div class="v">.XXX</div><div class="l">BABIP</div></div>
-        <div class="stat"><div class="v">.XXX</div><div class="l">BA / RISP</div></div>
-        <div class="stat"><div class="v">XX.XX</div><div class="l">GB %</div></div>
-        <div class="stat"><div class="v">XX</div><div class="l">Hard Hit</div></div>
-        <div class="stat"><div class="v">XX–X</div><div class="l">Team Record</div></div>
-        <div class="stat"><div class="v">XX%</div><div class="l">SB Success</div></div>
+      <div class="stat-card feature">
+        <div class="stat-label">COMBINED SB</div>
+        <div class="stat-num">57</div>
+        <div class="stat-sub">93%+ success</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">TEAMS</div>
+        <div class="stat-num">2</div>
+        <div class="stat-sub">Hotshots · Bananas</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ───────────── INSTAGRAM ───────────── -->
-<section id="instagram">
-  <div class="section-head">
-    <div class="kicker">Highlights</div>
-    <h2>Instagram</h2>
-  </div>
-  <p style="text-align:center;margin-bottom:28px;opacity:.7">
-    Featured reels from <a href="#">@johnny_handle</a>
-  </p>
-  <div class="ig-grid">
-    <a href="#">Highlight reel #1</a>
-    <a href="#">Speed clip</a>
-    <a href="#">Defense</a>
-  </div>
-</section>
+  <!-- FULL STAT TABLE — DUAL TEAM -->
+  <section class="full-stats" id="stats">
+    <div class="section-eyebrow">The full line</div>
+    <h2 class="section-title">Two teams.<br/><em>Same #74.</em></h2>
 
-<!-- ───────────── HIGHLIGHTS REEL ───────────── -->
-<section id="highlights">
-  <div class="section-head">
-    <div class="kicker">Game Tape</div>
-    <h2>The Highlight Reel</h2>
-  </div>
-  <div class="reel-grid">
+    <!-- ============= HOTSHOTS 2K15 ============= -->
+    <div class="team-block">
+      <div class="team-header">
+        <div class="team-id">
+          <span class="pri">PRIMARY · 10U</span>
+          Hotshots 2K15
+        </div>
+        <div class="team-slash">
+          <span>SLASH</span> .623 / .655 / .679 &nbsp;·&nbsp; <span>OPS</span> 1.334
+        </div>
+      </div>
 
-    <!-- HOME RUN -->
-    <div class="clip">
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1S3xxuE5y708uVW-eu09KcClmUetPy70I/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
-      <div class="clip-meta">
-        <div class="row"><span class="badge gold">HR</span><span class="clip-date">Mar 22, 2025</span></div>
-        <div class="clip-title">Over the fence</div>
-        <div class="clip-sub">Inn 2 (Top) — Home Run</div>
+      <div class="stat-tables">
+        <div class="stat-table">
+          <h3>Hitting</h3>
+          <dl>
+            <dt>Plate Appearances</dt><dd>59</dd>
+            <dt>At Bats</dt><dd>53</dd>
+            <dt>Hits</dt><dd class="hot">33</dd>
+            <dt>Singles</dt><dd>32</dd>
+            <dt>Doubles</dt><dd>0</dd>
+            <dt>Triples</dt><dd>0</dd>
+            <dt>Home Runs</dt><dd>1</dd>
+            <dt>Runs Batted In</dt><dd>11</dd>
+            <dt>Runs Scored</dt><dd class="hot">30</dd>
+            <dt>Walks (BB)</dt><dd>5</dd>
+            <dt>Strikeouts (SO)</dt><dd>7</dd>
+            <dt>K Looking</dt><dd>1</dd>
+            <dt>Hit By Pitch</dt><dd>0</dd>
+            <dt>Sacrifices</dt><dd>1</dd>
+            <dt>Sac Flies</dt><dd>0</dd>
+            <dt>Reached On Error</dt><dd>0</dd>
+            <dt>Fielder's Choice</dt><dd>0</dd>
+          </dl>
+        </div>
+
+        <div class="stat-table">
+          <h3>Slash & Speed</h3>
+          <dl>
+            <dt>Batting Average</dt><dd class="hot">.623</dd>
+            <dt>On-Base %</dt><dd class="hot">.655</dd>
+            <dt>Slugging %</dt><dd class="hot">.679</dd>
+            <dt>OPS</dt><dd class="hot">1.334</dd>
+            <dt>Stolen Bases</dt><dd class="hot">40</dd>
+            <dt>SB Success Rate</dt><dd class="hot">95.24%</dd>
+            <dt>Caught Stealing</dt><dd>2</dd>
+            <dt>Picked Off</dt><dd>0</dd>
+          </dl>
+        </div>
       </div>
     </div>
 
-    <!-- TRIPLE 1 -->
-    <div class="clip">
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1IrLe9DjE7Dz3WpggFT06xnmopX5YYWeg/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
-      <div class="clip-meta">
-        <div class="row"><span class="badge">3B</span><span class="clip-date">Oct 19, 2025</span></div>
-        <div class="clip-title">Wheels to third</div>
-        <div class="clip-sub">Inn 1 (Top) — Triple</div>
+    <!-- ============= BANANAS ============= -->
+    <div class="team-block">
+      <div class="team-header">
+        <div class="team-id">
+          <span class="pri">SECONDARY · MULTI-TEAM</span>
+          Bananas
+        </div>
+        <div class="team-slash">
+          <span>SLASH</span> .345 / .537 / .345 &nbsp;·&nbsp; <span>OPS</span> .881
+        </div>
+      </div>
+
+      <div class="stat-tables">
+        <div class="stat-table">
+          <h3>Hitting</h3>
+          <dl>
+            <dt>Games Played</dt><dd>33</dd>
+            <dt>Plate Appearances</dt><dd>43</dd>
+            <dt>At Bats</dt><dd>29</dd>
+            <dt>Hits</dt><dd class="hot">10</dd>
+            <dt>Singles</dt><dd>10</dd>
+            <dt>Doubles</dt><dd>0</dd>
+            <dt>Triples</dt><dd>0</dd>
+            <dt>Home Runs</dt><dd>0</dd>
+            <dt>Runs Batted In</dt><dd>7</dd>
+            <dt>Runs Scored</dt><dd class="hot">16</dd>
+            <dt>Walks (BB)</dt><dd>11</dd>
+            <dt>Strikeouts (SO)</dt><dd>13</dd>
+            <dt>K Looking</dt><dd>2</dd>
+            <dt>Hit By Pitch</dt><dd>1</dd>
+            <dt>Sacrifices</dt><dd>1</dd>
+            <dt>Sac Flies</dt><dd>0</dd>
+            <dt>Reached On Error</dt><dd>0</dd>
+            <dt>Fielder's Choice</dt><dd>0</dd>
+          </dl>
+        </div>
+
+        <div class="stat-table">
+          <h3>Slash & Speed</h3>
+          <dl>
+            <dt>Batting Average</dt><dd class="hot">.345</dd>
+            <dt>On-Base %</dt><dd class="hot">.537</dd>
+            <dt>Slugging %</dt><dd>.345</dd>
+            <dt>OPS</dt><dd class="hot">.881</dd>
+            <dt>Stolen Bases</dt><dd class="hot">17</dd>
+            <dt>SB Success Rate</dt><dd class="hot">89.47%</dd>
+            <dt>Caught Stealing</dt><dd>2</dd>
+            <dt>Picked Off</dt><dd>0</dd>
+          </dl>
+
+          <h3 style="margin-top:32px;">Context</h3>
+          <dl>
+            <dt>Season</dt><dd>2026</dd>
+            <dt>Position</dt><dd>Shortstop</dd>
+            <dt>Bats / Throws</dt><dd>L / R</dd>
+          </dl>
+        </div>
       </div>
     </div>
 
-    <!-- TRIPLE 2 -->
-    <div class="clip">
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/17pIFo0gocXVJxGH8gxi8uZFmmgsrHGFX/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
-      <div class="clip-meta">
-        <div class="row"><span class="badge">3B</span><span class="clip-date">Mar 8, 2025</span></div>
-        <div class="clip-title">Gap to gap</div>
-        <div class="clip-sub">Inn 2 (Bot) — Triple</div>
-      </div>
-    </div>
+  </section>
 
-    <!-- DOUBLE 1 -->
-    <div class="clip">
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1LA2u2egim1j0AV51Hu5r_8z4P7-Au7y7/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
-      <div class="clip-meta">
-        <div class="row"><span class="badge">2B</span><span class="clip-date">Dec 14, 2025</span></div>
-        <div class="clip-title">Stand-up double</div>
-        <div class="clip-sub">Inn 1 (Top) — Double</div>
-      </div>
-    </div>
+  <!-- PHOTOS -->
+  <section class="photos" id="photos">
+    <div class="section-eyebrow">Highlights</div>
+    <h2 class="section-title">In the <em>field.</em></h2>
 
-    <!-- DOUBLE 2 -->
-    <div class="clip">
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1Rwb4sYTx1dBhiLxAgxT3tdvwjYoLff3B/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
-      <div class="clip-meta">
-        <div class="row"><span class="badge">2B</span><span class="clip-date">Nov 16, 2025</span></div>
-        <div class="clip-title">In the gap</div>
-        <div class="clip-sub">Inn 1 (Top) — Double</div>
-      </div>
+    <div class="photo-grid">
+      <div class="p1">[Add hero photo]</div>
+      <div>[Add photo 2]</div>
+      <div>[Add photo 3]</div>
+      <div>[Add photo 4]</div>
+      <div>[Add photo 5]</div>
     </div>
+  </section>
 
-    <!-- DOUBLE 3 -->
-    <div class="clip">
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1M6SDjfsHx1DpWt9EKx64xdeL2IO3CIAL/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
-      <div class="clip-meta">
-        <div class="row"><span class="badge">2B</span><span class="clip-date">Aug 23, 2025</span></div>
-        <div class="clip-title">Two bags, easy</div>
-        <div class="clip-sub">Inn 3 (Top) — Double</div>
-      </div>
-    </div>
-
-    <!-- SINGLE 1 -->
-    <div class="clip">
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1yX01PQwq9IMnVpzvUGKvivLTrfosJB-x/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
-      <div class="clip-meta">
-        <div class="row"><span class="badge">1B</span><span class="clip-date">Apr 27, 2025</span></div>
-        <div class="clip-title">Beat it out</div>
-        <div class="clip-sub">Inn 1 (Bot) — Single</div>
-      </div>
-    </div>
-
-    <!-- SINGLE 2 -->
-    <div class="clip">
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1VhLK3n4vxnilX-m877kReal_Y4dS2H_p/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
-      <div class="clip-meta">
-        <div class="row"><span class="badge">1B</span><span class="clip-date">Apr 13, 2025</span></div>
-        <div class="clip-title">Slap to short</div>
-        <div class="clip-sub">Inn 3 (Top) — Single</div>
-      </div>
-    </div>
-
-    <!-- BUNT 1 -->
-    <div class="clip">
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/1U2xf1PlyM7cTsSAZu5hHXF1g3SYtHJvh/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
-      <div class="clip-meta">
-        <div class="row"><span class="badge">BUNT</span><span class="clip-date">Nov 16, 2025</span></div>
-        <div class="clip-title">Push it down</div>
-        <div class="clip-sub">Inn 1 (Top) — Sacrifice Bunt</div>
-      </div>
-    </div>
-
-    <!-- BUNT 2 -->
-    <div class="clip">
-      <div class="video-wrap"><iframe src="https://drive.google.com/file/d/12bveOebrcLBdAuT165WK5ht49fXO6ti0/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>
-      <div class="clip-meta">
-        <div class="row"><span class="badge">BUNT</span><span class="clip-date">Oct 25, 2025</span></div>
-        <div class="clip-title">Drop it dead</div>
-        <div class="clip-sub">Inn 2 (Bot) — Sacrifice Bunt</div>
-      </div>
-    </div>
-
-  </div>
-  <div class="reel-note">
-    Clips are streamed from Google Drive. For these to play for visitors, the <em>Johnny</em> folder needs to be set to <strong>"Anyone with the link → Viewer"</strong> in Drive sharing settings.
-  </div>
-</section>
-
-<!-- ───────────── HIGHLIGHT SCRIPT ───────────── -->
-<section id="reel">
-  <div class="section-head">
-    <div class="kicker">Reel Voiceover</div>
-    <h2>Highlight Script</h2>
-  </div>
-  <div class="script">
-    <div class="beat">
-      <div class="label">Opening</div>
-      <div class="line">"#74 Johnny Rogers brings [adjective], [adjective], and [adjective] every time she steps on the field."</div>
-    </div>
-    <div class="beat">
-      <div class="label">Beat 1</div>
-      <div class="line">"[TODO: identity beat — what defines her game.]"</div>
-    </div>
-    <div class="beat">
-      <div class="label">Beat 2</div>
-      <div class="line">"[TODO: development beat — what she's built up to.]"</div>
-    </div>
-    <div class="beat">
-      <div class="label">Beat 3</div>
-      <div class="line">"[TODO: stats beat — quote actual career numbers.]"</div>
-    </div>
-    <div class="beat">
-      <div class="label">Closing</div>
-      <div class="line">"#74 plays with confidence, edge, and game-changing energy."</div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="brand-foot">♡ Johnny74 ♡</div>
-  <div class="small">#74 Johnny Rogers — Athlete Profile</div>
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <div>JOHNNY ROGERS · #74 · 2026 SEASON</div>
+    <div>Stats via GameChanger · <a href="story.html" style="opacity:.7">Read the story →</a></div>
+  </footer>
 
 </body>
 </html>
