@@ -864,6 +864,69 @@
     @media (max-width:800px) { .hero-inner { grid-template-columns:1fr; } }
     .stat-strip-inner { grid-template-columns:repeat(5,1fr); }
     @media (max-width:800px) { .stat-strip-inner { grid-template-columns:repeat(3,1fr); } }
+
+    /* ── TEAMMATE SHOUTOUT ── */
+    .shoutout-bar {
+      background: #f0f4ff;
+      border-bottom: 1px solid #c8d8f0;
+      padding: 0;
+    }
+    .shoutout-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.75rem max(1.5rem, env(safe-area-inset-right));
+      padding-left: max(1.5rem, env(safe-area-inset-left));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .shoutout-text {
+      font-size: 0.88rem;
+      color: #1a2e4a;
+      line-height: 1.4;
+    }
+    .shoutout-text em { font-style: italic; font-weight: 600; color: #c8001e; }
+    .shoutout-tag {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #1a3a7a;
+      background: rgba(26,58,122,0.08);
+      border: 1px solid rgba(26,58,122,0.2);
+      padding: 2px 7px;
+      border-radius: 2px;
+      margin-right: 0.6rem;
+      vertical-align: middle;
+    }
+    .shoutout-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #c8001e;
+      color: #fff;
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 0.06em;
+      padding: 0.5rem 1rem;
+      border-radius: 3px;
+      min-height: 40px;
+      white-space: nowrap;
+      transition: background 0.15s;
+      flex-shrink: 0;
+    }
+    .shoutout-btn:hover { background: #e8001f; }
+    .shoutout-num { font-size: 1rem; }
+    .shoutout-name { font-size: 0.88rem; }
+    .shoutout-arrow { font-size: 0.85rem; opacity: 0.7; }
+    @media (max-width: 480px) {
+      .shoutout-inner { gap: 0.6rem; }
+      .shoutout-text { font-size: 0.82rem; }
+    }
+
   </style>
 </head>
 <body>
@@ -914,6 +977,21 @@
     <div class="stat-item"><div class="stat-val">3</div><div class="stat-label">Doubles</div></div>
     <div class="stat-item"><div class="stat-val gold">10+</div><div class="stat-label">Singles</div></div>
     <div class="stat-item"><div class="stat-val">15+</div><div class="stat-label">Stolen Bases</div></div>
+  </div>
+</div>
+
+<!-- ── TEAMMATE SHOUTOUT ── -->
+<div class="shoutout-bar">
+  <div class="shoutout-inner">
+    <div class="shoutout-text">
+      <span class="shoutout-tag">Teammate Spotlight</span>
+      Nooooobody — and I mean <em>nobody</em> — is tougher than her.
+    </div>
+    <a href="kass21-landing.html" class="shoutout-btn">
+      <span class="shoutout-num">#21</span>
+      <span class="shoutout-name">Kassidy Cargill</span>
+      <span class="shoutout-arrow">&#8594;</span>
+    </a>
   </div>
 </div>
 
